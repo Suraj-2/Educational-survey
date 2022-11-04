@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<title>SURVEY PAGE</title>
+<link rel="stylesheet" type="text/css" href="survey.css">
+
+<script type="text/javascript" src="survey.js"></script>
+
+</head>
+
+<body>
+
+  <img id="education_img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPqVInywWz3Z7-EQeXXKyURg5ujSweM6hi9wmikxcfGx7dK6HDeHgusJ-1yH3RUsvxyc&usqp=CAU">
+  <h1>EDUCATIONAL SURVEY</h1>
+  
+  <p>
+    In this survey we are going to discus about <i>education related</i> problems which you have been faced during this pandemic.
+    We are interested to know about your experiences and what were the ways you adopted during covid pandemic.
+    So that we can improve our education system.
+  </p>
+<form>
+ <div>
+          <!-- HTML Table and Various Types of INPUTS -->
+   <table>
+   <tr>
+  
+  <td class="lablel_col">First name:</td>
+  <td class="input_col"><input name ="firstname" id="firstName"  type="text" onblur="validateFirstName()"; placeholder="first name" required><span id="message1"></span></td>
+  
+  </tr>
+   <tr>
+
+<td class="lablel_col">Last name:</td>
+<td class="input_col"><input id="lastName" type="text" name="lastName" onblur="validateLastName()"; placeholder="last name"><span id="message2"></span></td>
+  </tr>
+  <tr>
+<td class="lablel_col">Contact no.:</td>
+<td class="input_col"><input type="number" id="phone" name="phoneNumber" onblur="validatePhone()";  placeholder="xxxxxxxxxx"><span id="message3"></span></td>
+  </tr>
+  <tr>
+<td class="lablel_col">Locality:</td>
+<td class="input_col"><input type="text" name="locality" id="locality" onblur="validateLocality()"; placeholder="locality"><span id="message4"></span></td>
+  </tr>
+  <tr>
+<td class="lablel_col">State:</td>
+<td class="input_col"><input type="text" name="state" id="state" onblur="validateState()"; placeholder="state"><span id="message5"></span></td>
+
+  </tr>
+  <tr>
+<td class="lablel_col">Country:</td>
+<td class="input_col"><input type="text" name="country" id="country" onblur="validateCountry()"; placeholder="country"><span id="message6"></span></td>
+ </tr>
+ <tr>
+  <td class="lablel_col">Survey date:</td>
+ <td class="input_col"> <input type="date" name="survey_date"></td>
+ </tr>
+ 
+ </table>
+
+Q1.What was mode of your education system before covid-19 ?<br>
+<input type="radio" name="q1" value="online">online
+<input type="radio" name="q1" value="offline">offline<br><br>
+
+Q2.What type of education mode do you prefer?<br>
+<input type="radio" name="q2" value="online">online
+<input type="radio" name="q2" value="offline">offline<br><br>
+
+Q3.was your school/college opened during covid-19 in 2020?<br>
+
+ <input type="radio" name="q3" value="yes">yes
+<input type="radio" name="q3" value="no">no<br><br>
+Q4.How did you attend your classes during covid-19 in 2020 ?<br>
+<input type="radio" name="q3" value="laptop"> on laptop
+<input type="radio" name="q3" value="mobile">on mobile
+<input type="radio" name="q3" value="both">both<br><br>
+
+Q5.Did you help any poor student in this pademic period to come out in this situation?<br>
+
+<input type="radio" name="q4" value="yes">yes
+<input type="radio" name="q4" value="no">no<br><br>
+
+Q6.How did you help any student by ?<br>
+<input type="checkbox" name="q5" value="money">money
+<input type="checkbox" name="q5" value="books">books
+<input type="checkbox" name="q5" value="teaching online">teaching online<br><br>
+
+Q7.How did you maintain your syllabus?<br>
+<input type="text" name="syllabus" >
+<br>
+Q8.Let us know about current situation of your locality.<br>
+<input type="text" name="current situation" >
+<br> 
+Q9.What would you like to suggest other ?<br>
+<input type="text" name="suggestion">
+<br> 
+
+   </div>
+  </form> 
+ </body>
+</html>
